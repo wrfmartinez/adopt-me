@@ -3,7 +3,7 @@ import { useState } from "react";
 const SearchParams = () => {
   const [location, setLocation] = useState("");
 
-  const handleChange = (e) => {
+  const handleInputChange = (e) => {
     setLocation(e.target.value);
   };
 
@@ -14,7 +14,7 @@ const SearchParams = () => {
           Location
           <input
             id="location"
-            onChange={handleChange}
+            onChange={handleInputChange}
             value={location}
             placeholder="search a location"
           />
